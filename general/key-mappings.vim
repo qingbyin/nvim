@@ -1,11 +1,5 @@
 " Basic key mappings
 
-" Remap Escape key
-" inoremap jk <Esc>
-" Avoid the delay after only typing `j`
-autocmd InsertEnter * set timeoutlen=200
-autocmd InsertLeave * set timeoutlen=1000
-
 " Map <space> to <leader>
 let mapleader ="\<Space>"
 let maplocalleader = "\\"
@@ -45,13 +39,7 @@ nmap <C-k> <C-w>k
 nmap <F1> <nop>
 imap <F1> <nop>
 
-" Copy and Paste to a specific register
-nnoremap <silent> <leader>Y "myy
-vnoremap <silent> <leader>Y "my
-nnoremap <silent> <leader>p "mp
 " copy to the system clipboard
 nnoremap <silent> <leader>yy "+yy
 vnoremap <silent> <leader>y "+y
 
-" Auto add \item in list
-inoremap <M-i> \item<space>
