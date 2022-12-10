@@ -16,7 +16,7 @@ function! modules#workspace#plugins() abort
 endfunction
 
 function! modules#workspace#config() abort
-    let g:startify_session_dir = '~/.vim/sessions'
+    " let g:startify_session_dir = '~/.vim/sessions'
 
     let g:startify_lists = [
                 \ { 'type': 'sessions',  'header': ['   Sessions']       },
@@ -29,7 +29,7 @@ function! modules#workspace#config() abort
     " Disable autosave which is conflicted with coclist
     let g:workspace_autosave = 0
     " save all your session files in a single directory outside of your workspace
-    let g:workspace_session_directory = $HOME . '/.vim/sessions/'
+    " let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
     let g:windowswap_map_keys = 0 "prevent default bindings
     nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
