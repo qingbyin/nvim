@@ -8,11 +8,12 @@ function! modules#appearance#plugins() abort
     call add(plugins, ['nvim-lualine/lualine.nvim'])
     " Icons shown in status/tab lines (can show file icon alongside filename)
     call add(plugins, ['kyazdani42/nvim-web-devicons'])
+    call add(plugins, ['nvim-treesitter/nvim-treesitter',  {'do': ':TSUpdate'}])
     return plugins
 endfunction
 
 function! modules#appearance#config() abort
-    " this next line is needed to enable your custom colors
+    " Enable syntax highlighting
     syntax enable
 
     " checks if the terminal has 24-bit color (true colors) support

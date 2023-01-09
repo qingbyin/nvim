@@ -75,9 +75,11 @@ function! s:mappings() abort
     nmap <silent> gy <Plug>(coc-type-definition)
     " nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
-
+    " Show outline in tree view
+    nnoremap go :CocOutline<CR>
     " Mouse hover
     nnoremap <silent> gh :call CocActionAsync('doHover')<CR>
+
     " Symbol renaming.
     nmap <F2> <Plug>(coc-rename)
 
@@ -94,6 +96,4 @@ function! s:mappings() abort
       vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
     endif
 
-    " Show outline in tree view
-    nnoremap <space>O :CocOutline<CR>
 endfunction

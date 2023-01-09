@@ -4,6 +4,7 @@ function! modules#common#plugins() abort
     " (cooporated with surround.vim, so that ds, cs, yss can be repeated)
     call add(plugins, ['tpope/vim-repeat'])
     
+    " Auto pair
     call add(g:coc_global_extensions, 'coc-pairs')
     " Better Comments (gcc key)
     call add(plugins, ['tpope/vim-commentary'])

@@ -16,20 +16,6 @@ function! modules#git#config() abort
     " Add gitignore filetype
     au BufRead,BufNewFile .gitignore setfiletype gitignore
 
-    " Auto show git status (i.e., file has been modified or not) in status line B area
-    " +-----------------------------------------------------------------------------+
-    " | A | B |                     C                            X | Y | Z |  ...][ |
-    " +-----------------------------------------------------------------------------]
-    " Change decorator:
-    " "*": changed
-    " "●": staged
-    " "...": untracked
-    " "x": conflicted
-    autocmd User CocGitStatusChange call s:update_git_status()
-    function! s:update_git_status()
-        let g:airline_section_b = "%{get(g:,'coc_git_status','')}"
-    endfunction
-
     " Mappings
     call s:mappings()
 endfunction

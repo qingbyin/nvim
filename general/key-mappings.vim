@@ -43,3 +43,5 @@ imap <F1> <nop>
 nnoremap <silent> <leader>yy "+yy
 vnoremap <silent> <leader>y "+y
 
+
+
