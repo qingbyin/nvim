@@ -38,6 +38,6 @@ imap <F1> <nop>
 inoremap <c-j> <nop>
 
 " whichkey
-call minpac#add('liuchengxu/vim-which-key')
-nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+" call minpac#add('liuchengxu/vim-which-key')
+nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <Leader> :<c-u>WhichKeyVisual '<Space>'<CR>
