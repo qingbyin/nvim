@@ -20,6 +20,8 @@ nmap k <Plug>(accelerated_jk_gk)
 
 " Delete buffers (close files) without closing your windows 
 call minpac#add('moll/vim-bbye')
+" Kill the buffer without closing the window
+nnoremap <silent>  <Leader>q :Bdelete<CR>
 
 " Reopen files at the last edit position
 call minpac#add('farmergreg/vim-lastplace')

@@ -26,7 +26,6 @@ colorscheme hybrid_material
 highlight Normal guibg=NONE ctermbg=NONE
 highlight NonText guibg=NONE ctermbg=NONE
 
-
 " Status line theme (Note install a font that supports powerline icons)
 call minpac#add('itchyny/lightline.vim')
 " Always enable modeline/tabline

@@ -9,8 +9,7 @@ nnoremap H 0
 nnoremap L $
 " Save the current file
 nnoremap <silent> <C-s> :w<CR>
-" Kill the buffer without closing the window
-nnoremap <silent>  <Leader>q :Bdelete<CR>
+
 " use alt + hjkl to resize windows
 nnoremap <silent> <M-j> :resize -2<CR>
 nnoremap <silent> <M-k> :resize +2<CR>
@@ -38,6 +37,6 @@ imap <F1> <nop>
 inoremap <c-j> <nop>
 
 " whichkey
-" call minpac#add('liuchengxu/vim-which-key')
+call minpac#add('liuchengxu/vim-which-key')
 nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 vnoremap <silent> <Leader> :<c-u>WhichKeyVisual '<Space>'<CR>

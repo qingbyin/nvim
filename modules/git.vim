@@ -20,5 +20,5 @@ nmap <space>gu :Gitsigns undo_stage_hunk<CR>
 " Stage hunk
 nmap gs :Gitsigns stage_hunk<CR>
 " Jump to previous/next hunk
-nmap gj :Gitsigns prev_hunk<CR>
-nmap gk :Gitsigns next_hunk<CR>
+nmap gk :Gitsigns prev_hunk<CR>
+nmap gj :Gitsigns next_hunk<CR>

@@ -5,7 +5,7 @@ set expandtab  " Convert tab to spaces automatically
 set tabstop=4  " 1 tab = 4 spaces
 set shiftwidth=4
 set encoding=utf8
-" TODO Move to appearance
+
 " Show whitespace/tab/break explicitly (Use symbols similar to Office Word)
 set list listchars=tab:→\ ,trail:·,precedes:←,extends:→,space:·
 " Vertical ruler
@@ -46,3 +46,6 @@ set updatetime=300
 " By default the sign column will appear when there are signs to show and
 " disappear when there aren't. To always have the sign column
 set signcolumn=yes
+
+" Get rid of highlighting matches after searching text
+set nohlsearch

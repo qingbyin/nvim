@@ -16,6 +16,8 @@ set shortmess+=c
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 highlight CocHighlightText  guibg=#646470 ctermbg=223
+" Set highlight for the selected line when using CocList grep
+highlight CocListLine ctermfg=237 guibg=#13354A
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
