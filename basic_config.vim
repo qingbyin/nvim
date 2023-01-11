@@ -41,7 +41,7 @@ set mouse=nvi
 
 " Immediately update (default is 4000 ms = 4 s, too slow)
 " e.g. Immediately update gutter signs
-set updatetime=100
+set updatetime=300
 
 " By default the sign column will appear when there are signs to show and
 " disappear when there aren't. To always have the sign column
