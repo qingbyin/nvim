@@ -18,9 +18,6 @@ call minpac#add('rhysd/accelerated-jk')
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 
-" Start screen (greeter)
-call minpac#add('goolord/alpha-nvim')
-
 " Delete buffers (close files) without closing your windows 
 call minpac#add('moll/vim-bbye')
 
@@ -31,7 +28,7 @@ call minpac#add('farmergreg/vim-lastplace')
 call minpac#add('nvim-tree/nvim-tree.lua')
 call minpac#add('nvim-tree/nvim-web-devicons') " For file icons
 " Config
-lua require('nvimtree')
+lua require('nvim-tree-config')
 " Keymapping
 nmap <space>e :NvimTreeToggle<cr>
 
