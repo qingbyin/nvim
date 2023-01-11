@@ -1,7 +1,9 @@
 " Mimic emacs magit
-" call minpac#add('jreybert/vimagit')
-" nmap <Leader>M :MagitOnly<cr>
-" let g:magit_refresh_gitgutter = 1
+call minpac#add('TimUntersberger/neogit')
+call minpac#add('nvim-lua/plenary.nvim') " Required by neogit
+lua require('neogit-config')
+nmap <space>M :Neogit kind=split<cr>
+
 
 " Show git differ on the gutter
 call minpac#add('lewis6991/gitsigns.nvim')
