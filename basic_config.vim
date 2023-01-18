@@ -6,8 +6,6 @@ set tabstop=4  " 1 tab = 4 spaces
 set shiftwidth=4
 set encoding=utf8
 
-" Show whitespace/tab/break explicitly (Use symbols similar to Office Word)
-set list listchars=tab:→\ ,trail:·,precedes:←,extends:→,space:·
 " Vertical ruler
 set colorcolumn=80,100,120
 " Hybrid line numbers

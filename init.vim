@@ -32,9 +32,12 @@ runtime ./modules/theme.vim
 runtime ./modules/editor.vim
 runtime ./modules/git.vim
 runtime ./modules/completion.vim
-" Add other plugins here.
-" Vim syntax highlighting
-" call minpac#add('vim-jp/syntax-vim-ex')
+runtime ./modules/input.vim
+
+" Language
+runtime ./modules/cpp.vim
+runtime ./modules/python.vim
+runtime ./modules/otherlang.vim
 
 " Debug if vim is slow or broken
 " Check plugin performance
@@ -42,12 +45,8 @@ call minpac#add('dstein64/vim-startuptime')
 " Debug coc
 " let g:node_client_debug = 1
 
-" keymappings for all
-runtime keymappings.vim
-
-" Language
-runtime ./modules/cpp.vim
-
 " Load the plugins right now. (optional)
 "packloadall
 
+" keymappings for all
+runtime keymappings.vim
