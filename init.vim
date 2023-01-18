@@ -6,16 +6,6 @@ runtime basic_config.vim
 " --------------------------------------------------------------
 " Modules
 " --------------------------------------------------------------
-" call modules#add('common')
-" call modules#add('appearance')
-" call modules#add('coc')
-" call modules#add('coc_lists')
-" call modules#add('git')
-" call modules#add('explorer')
-" call modules#add('workspace')
-" call modules#add('motion')
-" call modules#add('snippets')
-" call modules#add('org')
 " Language
 " call modules#add('cpp')
 " call modules#add('python')
@@ -54,6 +44,9 @@ call minpac#add('dstein64/vim-startuptime')
 
 " keymappings for all
 runtime keymappings.vim
+
+" Language
+runtime ./modules/cpp.vim
 
 " Load the plugins right now. (optional)
 "packloadall

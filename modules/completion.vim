@@ -1,6 +1,8 @@
 "
 " Autocompletion and lsp support
 call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
+" Add common extensions
+let g:coc_global_extensions = ['coc-lists', 'coc-snippets']
 
 " Config coc
 " TextEdit might fail if hidden is not set.
