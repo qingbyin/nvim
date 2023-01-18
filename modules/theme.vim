@@ -16,7 +16,6 @@ syntax enable
 " some of the code to be bolded, like functions and language controls
 let g:enable_bold_font = 1
 
-
 " colorscheme
 call minpac#add('kristijanhusak/vim-hybrid-material')
 call minpac#add('arcticicestudio/nord-vim')
@@ -48,3 +47,15 @@ let g:lightline = {
       \   'tabs': 'filename'
       \ }
       \ }
+
+" Indent guide
+call minpac#add('Yggdroot/indentLine')
+" Show leading spaces
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
+" Show idnent guide lines
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" Show whitespace/tab/break explicitly (Use symbols similar to Office Word)
+" set list listchars=tab:→\ ,trail:·,precedes:←,extends:→,space:·
+set list listchars=trail:·
